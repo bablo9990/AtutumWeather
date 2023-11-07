@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>355</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe Print</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Погода в городе</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(56, 56, 56);
+selection-color: rgb(159, 159, 159);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="font">
+         <font>
+          <family>Cascadia Mono SemiLight</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> background: url(search-dark.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    color: #777;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  </string>
+        </property>
+        <property name="maxLength">
+         <number>12</number>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="placeholderText">
+         <string>Ввод...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="font">
+         <font>
+          <family>Cascadia Mono SemiLight</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+margin-top: 6px;
+margin-bottom: 6px;
+    background-color: #007AFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;</string>
+        </property>
+        <property name="text">
+         <string>Получить</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Cascadia Mono SemiLight</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>[Data from api]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Cascadia Mono SemiLight</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Введите город для получения погоды</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Cascadia Mono SemiLight</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>355</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
